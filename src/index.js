@@ -6,7 +6,7 @@ import Root from './components/Root';
 
 const store = configureStore();
 
-window.console.dir(store.getState());
+// window.console.dir(store.getState());
 
 render(
   <Root store={store}/>,

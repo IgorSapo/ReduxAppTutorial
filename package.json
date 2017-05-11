@@ -8,7 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/todos.git"
+    // "url": "https://github.com/gaearon/todos.git"
+    "url": "https://github.com/IgorSapo/ReduxAppTutorial.git"
   },
   "license": "MIT",
   "dependencies": {

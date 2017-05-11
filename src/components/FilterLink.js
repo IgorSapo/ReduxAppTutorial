@@ -17,7 +17,6 @@ const FilterLink = ({ filter, children }) => (
       textDecoration: 'none',
       color: 'black',
     }}
-    isActive={isActive}
   >
     {children}
   </NavLink>
