@@ -12,7 +12,8 @@ const isActive = (match, location) => {
 
 const FilterLink = ({ filter, children }) => (
   <NavLink
-    to={filter === 'all' ? '' : filter}
+    exact
+    to={filter === 'all' ? '/' : '/' + filter}
     activeStyle={{
       textDecoration: 'none',
       color: 'black',
