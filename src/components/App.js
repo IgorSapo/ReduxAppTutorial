@@ -5,13 +5,13 @@ import VisibleTodoList from './VisibleTodoList';
 
 const App = () => {
   // console.log(location)
-	return (
+  return (
     <div>
       <AddTodo />
       <VisibleTodoList />
       <Footer />
     </div>
-  )
+  );
 };
 
 export default App;
