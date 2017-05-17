@@ -7,10 +7,10 @@ import { fetchTodos } from './api';
 
 const store = configureStore();
 
-fetchTodos('all').then(todos => console.log(todos));
+fetchTodos('all').then(todos => window.console.log(todos));
 // window.console.dir(store.getState());
 
 render(
-  <Root store={store}/>,
+  <Root store={store} />,
   document.getElementById('root')
 );

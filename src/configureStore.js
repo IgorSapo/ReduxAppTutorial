@@ -1,7 +1,8 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import promise from 'redux-promise';
 import { createLogger } from 'redux-logger';
 import todoApp from './reducers';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 const configureStore = () => {
 
@@ -14,8 +15,7 @@ const configureStore = () => {
 
   return createStore(
     todoApp,
-    applyMiddleware(...middlewares),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    composeWithDevTools(applyMiddleware(...middlewares))
   );
 };
 
